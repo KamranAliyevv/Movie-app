@@ -19,7 +19,6 @@ export const changeWatchList = (state, { payload }) => {
       item.title.toLowerCase().includes(payload[1].toLowerCase())
     );
     state.watchList = copyResults;
-    localStorage.setItem("watchList", JSON.stringify(copyResults));
   } else {
     state.watchList = copyWatchList;
     localStorage.setItem("watchList", JSON.stringify(copyWatchList));
@@ -43,7 +42,6 @@ export const changeWishList = (state, { payload }) => {
       item.title.toLowerCase().includes(payload[1].toLowerCase())
     );
     state.wishList = copyResults;
-    localStorage.setItem("wishList", JSON.stringify(copyResults));
   } else {
     state.wishList = copyWishList;
     localStorage.setItem("wishList", JSON.stringify(copyWishList));
