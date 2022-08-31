@@ -1,0 +1,60 @@
+.movie-item {
+  position: relative;
+  padding: 8px 8px 16px;
+  border-radius: 12px;
+  background: rgba(32, 40, 62, 0.8);
+  backdrop-filter: blur(80px);
+
+  img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 14px;
+  }
+  .imdb-rating {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    svg {
+      color: yellow;
+      font-size: 17px;
+      margin-right: 5px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ebeef5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 95%;
+  }
+  .movie-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    z-index: 10;
+
+    > div {
+      font-size: 25px;
+      color: orangered;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 8px;
+      background-color: rgba(32, 40, 62, 0.8);
+      cursor: pointer;
+    }
+  }
+}

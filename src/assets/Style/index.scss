@@ -1,0 +1,14 @@
+// PACKAGE
+@import "antd/dist/antd.min.css";
+
+// UTILS
+
+@import "./utils/reset";
+@import "./utils/helper";
+
+// Components
+@import "../../components/Layout/Header/header.scss";
+
+// PAGES
+@import "../../containers/Movies/movies.scss";
+@import "../../containers/Details/details.scss";
